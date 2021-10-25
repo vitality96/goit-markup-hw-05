@@ -15,7 +15,6 @@
 <body>
 
 <!--Шапка-->
-<div class="relative">
     <header class="header-line">
         <div class="container header">
         <nav class="nav">
@@ -43,8 +42,8 @@
             </li>
         </ul>
         </div>
-</div>
     </header>
+
 
     <!--Герой-->
     <main>
@@ -53,7 +52,7 @@
                 <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
             </div>
             <div class="btn">
-            <button type="button" class="hero-btn">Заказать услугу</button>
+            <button type="button" class="hero-btn" data-modal-open>Заказать услугу</button>
             </div>
         </section>
 
@@ -348,6 +347,16 @@
                 </ul>
             </div>
         </section>
+
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <button class="btn-close" data-modal-close>
+                <svg width="30" height="30">
+                <use href="./images/sprite.svg#close"></use>
+            </svg>
+        </button>
+        </div>
+    </div>
     </main>
 
     <!--Футер-->
@@ -397,5 +406,7 @@
         </div>
         </div>
     </footer>
+
+    <script src="./js/modal.js"></script>
 </body>
 </html>
